@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import Stripe from "stripe";
 
 export async function POST(req: NextRequest) {
   try {
@@ -7,28 +6,33 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Stripe not configured" }, { status: 500 });
     }
 
-    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
     const origin = req.headers.get("origin") || "https://ai-tools-woad-six.vercel.app";
+    const params = new URLSearchParams();
+    params.append("mode", "subscription");
+    params.append("payment_method_types[0]", "card");
+    params.append("line_items[0][price_data][currency]", "usd");
+    params.append("line_items[0][price_data][product_data][name]", "AI Tools Pro — Unlimited Access");
+    params.append("line_items[0][price_data][unit_amount]", "1900");
+    params.append("line_items[0][price_data][recurring][interval]", "month");
+    params.append("line_items[0][quantity]", "1");
+    params.append("success_url", `${origin}/success`);
+    params.append("cancel_url", `${origin}/#pricing`);
 
-    const session = await stripe.checkout.sessions.create({
-      mode: "subscription",
-      payment_method_types: ["card"],
-      line_items: [
-        {
-          price_data: {
-            currency: "usd",
-            product_data: { name: "AI Tools Pro — Unlimited Access" },
-            unit_amount: 1900,
-            recurring: { interval: "month" },
-          },
-          quantity: 1,
-        },
-      ],
-      success_url: `${origin}/success`,
-      cancel_url: `${origin}/#pricing`,
+    const res = await fetch("https://api.stripe.com/v1/checkout/sessions", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${process.env.STRIPE_SECRET_KEY}`,
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: params.toString(),
     });
 
-    return NextResponse.json({ url: session.url });
+    const data = await res.json();
+    if (!res.ok) {
+      return NextResponse.json({ error: data.error?.message || "Checkout failed" }, { status: 500 });
+    }
+
+    return NextResponse.json({ url: data.url });
   } catch (e: unknown) {
     const msg = e instanceof Error ? e.message : "Checkout failed";
     return NextResponse.json({ error: msg }, { status: 500 });
