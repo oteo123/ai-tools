@@ -23,6 +23,8 @@ export default function ToolPage({ name, description, systemPrompt, fields, buil
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
   const [uses, setUses] = useState(0);
+  const [email, setEmail] = useState("");
+  const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -99,6 +101,46 @@ export default function ToolPage({ name, description, systemPrompt, fields, buil
           <span className="text-sm text-muted">{5 - uses} free uses remaining</span>
         </div>
       </form>
+
+      {uses >= 3 && !emailSubmitted && uses < 5 && (
+        <div className="p-4 rounded-lg border border-accent/30 bg-accent/5 mb-6">
+          <p className="font-medium mb-1">Get free AI tips & tool updates</p>
+          <p className="text-sm text-muted mb-3">Join 100+ creators using AI Tools Pro.</p>
+          <form
+            onSubmit={async (e) => {
+              e.preventDefault();
+              await fetch("/api/subscribe", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email }),
+              });
+              setEmailSubmitted(true);
+            }}
+            className="flex gap-2"
+          >
+            <input
+              type="email"
+              placeholder="you@email.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="flex-1 p-2 rounded-lg bg-surface border border-border focus:border-accent focus:outline-none text-sm"
+            />
+            <button
+              type="submit"
+              className="px-4 py-2 rounded-lg bg-accent text-white text-sm font-medium hover:bg-accent-hover transition-colors"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      )}
+
+      {emailSubmitted && uses < 5 && (
+        <div className="p-4 rounded-lg border border-green-500/30 bg-green-500/5 mb-6">
+          <p className="text-sm text-green-400">You're subscribed! We'll send you AI tips & updates.</p>
+        </div>
+      )}
 
       {uses >= 5 && (
         <div className="p-4 rounded-lg border border-accent bg-accent/10 mb-6">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import Link from "next/link";
 import "./globals.css";
 
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </nav>
         <main className="max-w-7xl mx-auto px-6 py-8">{children}</main>
+        <Analytics />
       </body>
     </html>
   );
