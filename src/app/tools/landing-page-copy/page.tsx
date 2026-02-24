@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Landing Page Copy Generator — Free AI Tool | AI Tools Pro",
     description: "Write high-converting landing page copy. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/landing-page-copy",
+    url: "https://aitoolspro.app/tools/landing-page-copy",
     siteName: "AI Tools Pro",
     type: "website",
   },

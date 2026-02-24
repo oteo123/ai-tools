@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "YouTube Description Generator — Free AI Tool | AI Tools Pro",
     description: "Write SEO-optimized YouTube descriptions that rank and convert. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/youtube-description",
+    url: "https://aitoolspro.app/tools/youtube-description",
     siteName: "AI Tools Pro",
     type: "website",
   },

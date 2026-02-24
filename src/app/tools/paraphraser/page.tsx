@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Text Paraphraser — Free AI Tool | AI Tools Pro",
     description: "Rewrite text while keeping the meaning. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/paraphraser",
+    url: "https://aitoolspro.app/tools/paraphraser",
     siteName: "AI Tools Pro",
     type: "website",
   },

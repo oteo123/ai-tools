@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Restaurant Review Generator — Free AI Tool | AI Tools Pro",
     description: "Write compelling restaurant reviews that help others decide where to eat. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/restaurant-review",
+    url: "https://aitoolspro.app/tools/restaurant-review",
     siteName: "AI Tools Pro",
     type: "website",
   },

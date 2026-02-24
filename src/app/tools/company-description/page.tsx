@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Company Description Writer — Free AI Tool | AI Tools Pro",
     description: "Write polished company descriptions for any platform. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/company-description",
+    url: "https://aitoolspro.app/tools/company-description",
     siteName: "AI Tools Pro",
     type: "website",
   },

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Pinterest Description Generator — Free AI Tool | AI Tools Pro",
     description: "Write SEO-optimized Pinterest pin descriptions that drive clicks. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/pinterest-description",
+    url: "https://aitoolspro.app/tools/pinterest-description",
     siteName: "AI Tools Pro",
     type: "website",
   },

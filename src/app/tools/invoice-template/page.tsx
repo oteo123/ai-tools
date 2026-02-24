@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Invoice Template Generator — Free AI Tool | AI Tools Pro",
     description: "Create professional invoice templates for your business. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/invoice-template",
+    url: "https://aitoolspro.app/tools/invoice-template",
     siteName: "AI Tools Pro",
     type: "website",
   },

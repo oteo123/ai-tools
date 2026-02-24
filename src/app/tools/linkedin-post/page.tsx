@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "LinkedIn Post Generator — Free AI Tool | AI Tools Pro",
     description: "Professional posts that build your brand. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/linkedin-post",
+    url: "https://aitoolspro.app/tools/linkedin-post",
     siteName: "AI Tools Pro",
     type: "website",
   },

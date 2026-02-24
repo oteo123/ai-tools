@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Graduation Speech Generator — Free AI Tool | AI Tools Pro",
     description: "Write an inspiring graduation speech for any occasion. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/graduation-speech",
+    url: "https://aitoolspro.app/tools/graduation-speech",
     siteName: "AI Tools Pro",
     type: "website",
   },

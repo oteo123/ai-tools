@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Case Study Generator — Free AI Tool | AI Tools Pro",
     description: "Write professional case studies that showcase results. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/case-study",
+    url: "https://aitoolspro.app/tools/case-study",
     siteName: "AI Tools Pro",
     type: "website",
   },

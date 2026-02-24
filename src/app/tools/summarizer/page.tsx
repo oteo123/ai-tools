@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Text Summarizer — Free AI Tool | AI Tools Pro",
     description: "Condense long text into key points. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/summarizer",
+    url: "https://aitoolspro.app/tools/summarizer",
     siteName: "AI Tools Pro",
     type: "website",
   },

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Resume Builder — Free AI Tool | AI Tools Pro",
     description: "Stand-out resumes tailored to any job. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/resume-builder",
+    url: "https://aitoolspro.app/tools/resume-builder",
     siteName: "AI Tools Pro",
     type: "website",
   },

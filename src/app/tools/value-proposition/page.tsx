@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Value Proposition Generator — Free AI Tool | AI Tools Pro",
     description: "Craft a clear, compelling value proposition. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/value-proposition",
+    url: "https://aitoolspro.app/tools/value-proposition",
     siteName: "AI Tools Pro",
     type: "website",
   },

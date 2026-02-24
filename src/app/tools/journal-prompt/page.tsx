@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Journal Prompt Generator — Free AI Tool | AI Tools Pro",
     description: "Get thoughtful journal prompts for self-reflection and growth. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/journal-prompt",
+    url: "https://aitoolspro.app/tools/journal-prompt",
     siteName: "AI Tools Pro",
     type: "website",
   },

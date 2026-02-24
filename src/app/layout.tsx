@@ -9,11 +9,11 @@ const geist = Geist({ variable: "--font-geist", subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "AI Tools Pro — 102 Free AI-Powered Tools",
   description: "102 free AI tools for writing, marketing, social media, SEO, business, and more. No signup required. Powered by Claude AI.",
-  metadataBase: new URL("https://ai-tools-woad-six.vercel.app"),
+  metadataBase: new URL("https://aitoolspro.app"),
   openGraph: {
     title: "AI Tools Pro — 102 Free AI-Powered Tools",
     description: "102 free AI tools for writing, marketing, SEO, business, and more. No signup required.",
-    url: "https://ai-tools-woad-six.vercel.app",
+    url: "https://aitoolspro.app",
     siteName: "AI Tools Pro",
     type: "website",
   },

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contract Template Generator — Free AI Tool | AI Tools Pro",
     description: "Generate professional contract templates for any business need. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/contract-template",
+    url: "https://aitoolspro.app/tools/contract-template",
     siteName: "AI Tools Pro",
     type: "website",
   },

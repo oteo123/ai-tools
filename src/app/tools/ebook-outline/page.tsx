@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ebook Outline Generator — Free AI Tool | AI Tools Pro",
     description: "Plan your ebook with a comprehensive chapter outline. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/ebook-outline",
+    url: "https://aitoolspro.app/tools/ebook-outline",
     siteName: "AI Tools Pro",
     type: "website",
   },

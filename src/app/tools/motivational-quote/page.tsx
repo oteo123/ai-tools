@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Motivational Quote Generator — Free AI Tool | AI Tools Pro",
     description: "Generate powerful, original motivational quotes. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/motivational-quote",
+    url: "https://aitoolspro.app/tools/motivational-quote",
     siteName: "AI Tools Pro",
     type: "website",
   },

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Podcast Intro Script Generator — Free AI Tool | AI Tools Pro",
     description: "Write a compelling podcast intro that hooks listeners instantly. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/podcast-intro",
+    url: "https://aitoolspro.app/tools/podcast-intro",
     siteName: "AI Tools Pro",
     type: "website",
   },

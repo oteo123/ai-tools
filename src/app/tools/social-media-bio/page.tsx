@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Social Media Bio Generator — Free AI Tool | AI Tools Pro",
     description: "Craft a standout social media bio that captures who you are. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/social-media-bio",
+    url: "https://aitoolspro.app/tools/social-media-bio",
     siteName: "AI Tools Pro",
     type: "website",
   },

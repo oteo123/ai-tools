@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Study Notes Generator — Free AI Tool | AI Tools Pro",
     description: "Generate comprehensive, well-organized study notes on any topic. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/study-notes",
+    url: "https://aitoolspro.app/tools/study-notes",
     siteName: "AI Tools Pro",
     type: "website",
   },

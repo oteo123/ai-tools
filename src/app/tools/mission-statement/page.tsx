@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mission Statement Generator — Free AI Tool | AI Tools Pro",
     description: "Define your organization's purpose with a clear mission statement. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/mission-statement",
+    url: "https://aitoolspro.app/tools/mission-statement",
     siteName: "AI Tools Pro",
     type: "website",
   },

@@ -188,7 +188,7 @@ export default function ToolPage({ name, description, systemPrompt, fields, buil
             <button
               onClick={() => {
                 const text = encodeURIComponent(`Just used ${name} on AI Tools Pro! \u{1F525}`);
-                const url = encodeURIComponent("https://ai-tools-woad-six.vercel.app" + window.location.pathname);
+                const url = encodeURIComponent("https://aitoolspro.app" + window.location.pathname);
                 window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, "_blank");
               }}
               className="text-xs text-muted hover:text-accent transition-colors"
@@ -197,7 +197,7 @@ export default function ToolPage({ name, description, systemPrompt, fields, buil
             </button>
             <button
               onClick={() => {
-                const url = encodeURIComponent("https://ai-tools-woad-six.vercel.app" + window.location.pathname);
+                const url = encodeURIComponent("https://aitoolspro.app" + window.location.pathname);
                 window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, "_blank");
               }}
               className="text-xs text-muted hover:text-accent transition-colors"
@@ -206,7 +206,7 @@ export default function ToolPage({ name, description, systemPrompt, fields, buil
             </button>
             <button
               onClick={() => {
-                navigator.clipboard.writeText("https://ai-tools-woad-six.vercel.app" + window.location.pathname);
+                navigator.clipboard.writeText("https://aitoolspro.app" + window.location.pathname);
               }}
               className="text-xs text-muted hover:text-accent transition-colors"
             >

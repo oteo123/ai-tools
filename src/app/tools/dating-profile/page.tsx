@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dating Profile Generator — Free AI Tool | AI Tools Pro",
     description: "Create an authentic, attractive dating profile that stands out. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/dating-profile",
+    url: "https://aitoolspro.app/tools/dating-profile",
     siteName: "AI Tools Pro",
     type: "website",
   },

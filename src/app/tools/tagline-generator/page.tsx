@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tagline Generator — Free AI Tool | AI Tools Pro",
     description: "Generate memorable taglines and slogans for your brand. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/tagline-generator",
+    url: "https://aitoolspro.app/tools/tagline-generator",
     siteName: "AI Tools Pro",
     type: "website",
   },

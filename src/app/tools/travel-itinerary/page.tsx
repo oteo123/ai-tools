@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Travel Itinerary Generator — Free AI Tool | AI Tools Pro",
     description: "Plan the perfect trip with a detailed day-by-day itinerary. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/travel-itinerary",
+    url: "https://aitoolspro.app/tools/travel-itinerary",
     siteName: "AI Tools Pro",
     type: "website",
   },

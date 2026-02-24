@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cold Outreach Email Generator — Free AI Tool | AI Tools Pro",
     description: "Personalized cold emails that get replies. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/cold-email",
+    url: "https://aitoolspro.app/tools/cold-email",
     siteName: "AI Tools Pro",
     type: "website",
   },

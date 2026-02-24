@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Airbnb Description Generator — Free AI Tool | AI Tools Pro",
     description: "Write an irresistible Airbnb listing that books fast. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/airbnb-description",
+    url: "https://aitoolspro.app/tools/airbnb-description",
     siteName: "AI Tools Pro",
     type: "website",
   },

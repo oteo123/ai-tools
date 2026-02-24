@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "TikTok Caption Generator — Free AI Tool | AI Tools Pro",
     description: "Write scroll-stopping TikTok captions with viral potential. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/tiktok-caption",
+    url: "https://aitoolspro.app/tools/tiktok-caption",
     siteName: "AI Tools Pro",
     type: "website",
   },

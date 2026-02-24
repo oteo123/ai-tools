@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Diet Plan Generator — Free AI Tool | AI Tools Pro",
     description: "Get a structured diet plan aligned with your health goals. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/diet-plan",
+    url: "https://aitoolspro.app/tools/diet-plan",
     siteName: "AI Tools Pro",
     type: "website",
   },

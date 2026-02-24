@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Resignation Letter Generator — Free AI Tool | AI Tools Pro",
     description: "Write a professional, graceful resignation letter. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/resignation-letter",
+    url: "https://aitoolspro.app/tools/resignation-letter",
     siteName: "AI Tools Pro",
     type: "website",
   },

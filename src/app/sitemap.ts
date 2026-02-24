@@ -1,7 +1,7 @@
 import { tools } from "@/lib/tools";
 import { MetadataRoute } from "next";
 
-const BASE = "https://ai-tools-woad-six.vercel.app";
+const BASE = "https://aitoolspro.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const toolPages = tools.map((t) => ({

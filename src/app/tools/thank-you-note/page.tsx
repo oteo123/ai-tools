@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Thank You Note Generator — Free AI Tool | AI Tools Pro",
     description: "Thoughtful thank-you notes for any occasion. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/thank-you-note",
+    url: "https://aitoolspro.app/tools/thank-you-note",
     siteName: "AI Tools Pro",
     type: "website",
   },

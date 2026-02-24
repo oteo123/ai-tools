@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Domain Name Generator — Free AI Tool | AI Tools Pro",
     description: "Find creative, available-sounding domain names. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/domain-name",
+    url: "https://aitoolspro.app/tools/domain-name",
     siteName: "AI Tools Pro",
     type: "website",
   },

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "RSVP Message Generator — Free AI Tool | AI Tools Pro",
     description: "Write the perfect RSVP response for any event. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/rsvp-message",
+    url: "https://aitoolspro.app/tools/rsvp-message",
     siteName: "AI Tools Pro",
     type: "website",
   },

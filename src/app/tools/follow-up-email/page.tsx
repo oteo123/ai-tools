@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Follow-Up Email Generator — Free AI Tool | AI Tools Pro",
     description: "Write follow-up emails that get responses. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/follow-up-email",
+    url: "https://aitoolspro.app/tools/follow-up-email",
     siteName: "AI Tools Pro",
     type: "website",
   },

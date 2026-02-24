@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Complaint Letter Generator — Free AI Tool | AI Tools Pro",
     description: "Write effective, professional complaint letters. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/complaint-letter",
+    url: "https://aitoolspro.app/tools/complaint-letter",
     siteName: "AI Tools Pro",
     type: "website",
   },

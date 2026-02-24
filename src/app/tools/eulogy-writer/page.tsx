@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Eulogy Writer — Free AI Tool | AI Tools Pro",
     description: "Honor a loved one with a meaningful, heartfelt eulogy. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/eulogy-writer",
+    url: "https://aitoolspro.app/tools/eulogy-writer",
     siteName: "AI Tools Pro",
     type: "website",
   },

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Interview Questions Generator — Free AI Tool | AI Tools Pro",
     description: "Generate targeted interview questions for any role. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/interview-questions",
+    url: "https://aitoolspro.app/tools/interview-questions",
     siteName: "AI Tools Pro",
     type: "website",
   },

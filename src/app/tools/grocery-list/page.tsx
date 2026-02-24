@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Grocery List Generator — Free AI Tool | AI Tools Pro",
     description: "Generate organized grocery lists for any meal plan or occasion. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/grocery-list",
+    url: "https://aitoolspro.app/tools/grocery-list",
     siteName: "AI Tools Pro",
     type: "website",
   },

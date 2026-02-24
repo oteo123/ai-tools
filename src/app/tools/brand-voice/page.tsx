@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Brand Voice Guide Generator — Free AI Tool | AI Tools Pro",
     description: "Define your brand's unique voice and tone guidelines. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/brand-voice",
+    url: "https://aitoolspro.app/tools/brand-voice",
     siteName: "AI Tools Pro",
     type: "website",
   },

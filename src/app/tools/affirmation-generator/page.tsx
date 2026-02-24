@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Daily Affirmation Generator — Free AI Tool | AI Tools Pro",
     description: "Create personalized daily affirmations to boost your mindset. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/affirmation-generator",
+    url: "https://aitoolspro.app/tools/affirmation-generator",
     siteName: "AI Tools Pro",
     type: "website",
   },

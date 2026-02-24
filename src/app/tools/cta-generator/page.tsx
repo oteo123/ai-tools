@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Call-to-Action Generator — Free AI Tool | AI Tools Pro",
     description: "Generate high-converting CTAs for any context. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/cta-generator",
+    url: "https://aitoolspro.app/tools/cta-generator",
     siteName: "AI Tools Pro",
     type: "website",
   },

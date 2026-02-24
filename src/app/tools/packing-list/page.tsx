@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Packing List Generator — Free AI Tool | AI Tools Pro",
     description: "Never forget an essential item with a customized packing list. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/packing-list",
+    url: "https://aitoolspro.app/tools/packing-list",
     siteName: "AI Tools Pro",
     type: "website",
   },

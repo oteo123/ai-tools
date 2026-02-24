@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "FAQ Generator — Free AI Tool | AI Tools Pro",
     description: "Generate comprehensive FAQ sections for your product or service. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/faq-generator",
+    url: "https://aitoolspro.app/tools/faq-generator",
     siteName: "AI Tools Pro",
     type: "website",
   },

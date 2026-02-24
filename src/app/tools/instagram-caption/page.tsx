@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Instagram Caption Generator — Free AI Tool | AI Tools Pro",
     description: "Engaging captions that drive likes and comments. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/instagram-caption",
+    url: "https://aitoolspro.app/tools/instagram-caption",
     siteName: "AI Tools Pro",
     type: "website",
   },

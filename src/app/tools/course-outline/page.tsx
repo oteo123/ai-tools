@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Course Outline Generator — Free AI Tool | AI Tools Pro",
     description: "Design a structured online course curriculum. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/course-outline",
+    url: "https://aitoolspro.app/tools/course-outline",
     siteName: "AI Tools Pro",
     type: "website",
   },

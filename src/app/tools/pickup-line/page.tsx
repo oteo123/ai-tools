@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Pickup Line Generator — Free AI Tool | AI Tools Pro",
     description: "Generate clever, funny, or smooth pickup lines. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/pickup-line",
+    url: "https://aitoolspro.app/tools/pickup-line",
     siteName: "AI Tools Pro",
     type: "website",
   },

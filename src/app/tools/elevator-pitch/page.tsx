@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Elevator Pitch Generator — Free AI Tool | AI Tools Pro",
     description: "Create a punchy 30-60 second elevator pitch. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/elevator-pitch",
+    url: "https://aitoolspro.app/tools/elevator-pitch",
     siteName: "AI Tools Pro",
     type: "website",
   },

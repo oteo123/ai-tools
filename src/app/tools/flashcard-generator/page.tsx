@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Flashcard Generator — Free AI Tool | AI Tools Pro",
     description: "Create effective study flashcards on any topic. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/flashcard-generator",
+    url: "https://aitoolspro.app/tools/flashcard-generator",
     siteName: "AI Tools Pro",
     type: "website",
   },

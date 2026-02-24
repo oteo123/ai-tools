@@ -6,7 +6,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Stripe not configured" }, { status: 500 });
     }
 
-    const origin = req.headers.get("origin") || "https://ai-tools-woad-six.vercel.app";
+    const origin = req.headers.get("origin") || "https://aitoolspro.app";
     const params = new URLSearchParams();
     params.append("mode", "subscription");
     params.append("payment_method_types[0]", "card");

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tweet / X Post Writer — Free AI Tool | AI Tools Pro",
     description: "Viral tweets crafted by AI. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/tweet-writer",
+    url: "https://aitoolspro.app/tools/tweet-writer",
     siteName: "AI Tools Pro",
     type: "website",
   },

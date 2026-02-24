@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Business Proposal Generator — Free AI Tool | AI Tools Pro",
     description: "Write persuasive business proposals that win clients. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/proposal-writer",
+    url: "https://aitoolspro.app/tools/proposal-writer",
     siteName: "AI Tools Pro",
     type: "website",
   },

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Meditation Script Generator — Free AI Tool | AI Tools Pro",
     description: "Create guided meditation scripts for relaxation and mindfulness. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/meditation-script",
+    url: "https://aitoolspro.app/tools/meditation-script",
     siteName: "AI Tools Pro",
     type: "website",
   },

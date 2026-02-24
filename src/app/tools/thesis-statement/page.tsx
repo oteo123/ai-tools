@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Thesis Statement Generator — Free AI Tool | AI Tools Pro",
     description: "Craft strong, arguable thesis statements for your papers. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/thesis-statement",
+    url: "https://aitoolspro.app/tools/thesis-statement",
     siteName: "AI Tools Pro",
     type: "website",
   },

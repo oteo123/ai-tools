@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Brand Story Generator — Free AI Tool | AI Tools Pro",
     description: "Craft a compelling origin story for your brand. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/brand-story",
+    url: "https://aitoolspro.app/tools/brand-story",
     siteName: "AI Tools Pro",
     type: "website",
   },

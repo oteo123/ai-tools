@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Birthday Message Generator — Free AI Tool | AI Tools Pro",
     description: "Create the perfect birthday message for anyone. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/birthday-message",
+    url: "https://aitoolspro.app/tools/birthday-message",
     siteName: "AI Tools Pro",
     type: "website",
   },

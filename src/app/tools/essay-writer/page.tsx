@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Essay Writer — Free AI Tool | AI Tools Pro",
     description: "Write well-structured essays on any topic. Free, no signup required. Powered by AI.",
-    url: "https://ai-tools-woad-six.vercel.app/tools/essay-writer",
+    url: "https://aitoolspro.app/tools/essay-writer",
     siteName: "AI Tools Pro",
     type: "website",
   },
