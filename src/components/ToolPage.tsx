@@ -26,9 +26,11 @@ export default function ToolPage({ name, description, systemPrompt, fields, buil
   const [email, setEmail] = useState("");
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
+  const emailRequired = uses >= 3 && !emailSubmitted;
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (uses >= 5) return;
+    if (uses >= 5 || emailRequired) return;
     setLoading(true);
     setResult("");
     try {
@@ -93,19 +95,19 @@ export default function ToolPage({ name, description, systemPrompt, fields, buil
         <div className="flex items-center gap-4">
           <button
             type="submit"
-            disabled={loading || uses >= 5}
+            disabled={loading || uses >= 5 || emailRequired}
             className="px-6 py-3 rounded-lg bg-accent hover:bg-accent-hover text-white font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {loading ? "Generating..." : "Generate"}
+            {loading ? "Generating..." : emailRequired ? "Enter email below to continue" : "Generate"}
           </button>
-          <span className="text-sm text-muted">{5 - uses} free uses remaining</span>
+          <span className="text-sm text-muted">{uses >= 5 ? "0" : emailRequired ? "Enter email to unlock 2 more" : `${5 - uses}`} free uses remaining</span>
         </div>
       </form>
 
       {uses >= 3 && !emailSubmitted && uses < 5 && (
-        <div className="p-4 rounded-lg border border-accent/30 bg-accent/5 mb-6">
-          <p className="font-medium mb-1">Get free AI tips & tool updates</p>
-          <p className="text-sm text-muted mb-3">Join 100+ creators using AI Tools Pro.</p>
+        <div className="p-4 rounded-lg border border-accent bg-accent/10 mb-6">
+          <p className="font-medium mb-1">Enter your email to unlock 2 more free uses</p>
+          <p className="text-sm text-muted mb-3">Join 500+ creators using AI Tools Pro. No spam, unsubscribe anytime.</p>
           <form
             onSubmit={async (e) => {
               e.preventDefault();
@@ -145,17 +147,27 @@ export default function ToolPage({ name, description, systemPrompt, fields, buil
       {uses >= 5 && (
         <div className="p-4 rounded-lg border border-accent bg-accent/10 mb-6">
           <p className="font-medium">You've used all free generations.</p>
-          <p className="text-sm text-muted mt-1">Upgrade to Pro for unlimited access — $19/mo</p>
-          <button
-            onClick={async () => {
-              const res = await fetch("/api/checkout", { method: "POST" });
-              const data = await res.json();
-              if (data.url) window.location.href = data.url;
-            }}
-            className="mt-3 px-4 py-2 rounded-lg bg-accent text-white text-sm font-medium hover:bg-accent-hover transition-colors"
-          >
-            Upgrade to Pro — $19/mo
-          </button>
+          <p className="text-sm text-muted mt-1">Upgrade to Pro for unlimited access</p>
+          <div className="flex gap-3 mt-3">
+            <button
+              onClick={async () => {
+                const res = await fetch("/api/checkout", { method: "POST" });
+                const data = await res.json();
+                if (data.url) window.location.href = data.url;
+              }}
+              className="px-4 py-2 rounded-lg bg-accent text-white text-sm font-medium hover:bg-accent-hover transition-colors"
+            >
+              Pro — $19/mo
+            </button>
+            <a
+              href="https://oteo5.gumroad.com/l/ai-tools-starter-kit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-lg bg-green-600 text-white text-sm font-medium hover:bg-green-500 transition-colors"
+            >
+              Lifetime — $99
+            </a>
+          </div>
         </div>
       )}
 
