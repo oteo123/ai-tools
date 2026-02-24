@@ -104,8 +104,15 @@ export default function ToolPage({ name, description, systemPrompt, fields, buil
         <div className="p-4 rounded-lg border border-accent bg-accent/10 mb-6">
           <p className="font-medium">You've used all free generations.</p>
           <p className="text-sm text-muted mt-1">Upgrade to Pro for unlimited access — $19/mo</p>
-          <button className="mt-3 px-4 py-2 rounded-lg bg-accent text-white text-sm font-medium">
-            Upgrade to Pro
+          <button
+            onClick={async () => {
+              const res = await fetch("/api/checkout", { method: "POST" });
+              const data = await res.json();
+              if (data.url) window.location.href = data.url;
+            }}
+            className="mt-3 px-4 py-2 rounded-lg bg-accent text-white text-sm font-medium hover:bg-accent-hover transition-colors"
+          >
+            Upgrade to Pro — $19/mo
           </button>
         </div>
       )}
