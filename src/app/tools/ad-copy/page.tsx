@@ -1,9 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "Ad Copy Generator — Free AI Tool | AI Tools Pro",
+  description: "High-converting ad copy for any platform. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "Ad Copy Generator — Free AI Tool | AI Tools Pro",
+    description: "High-converting ad copy for any platform. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/ad-copy",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ad Copy Generator — Free AI Tool | AI Tools Pro",
+    description: "High-converting ad copy for any platform. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="Ad Copy Generator" description="High-converting ad copy for any platform." systemPrompt="You are an expert performance marketer and copywriter. Write compelling ad copy with strong hooks, clear value props, and CTAs. Provide 3 variations. Output ONLY the ad copy." fields={[
-    { name: "product", label: "Product or service", type: "text", placeholder: "e.g. Online fitness coaching program" },
-    { name: "platform", label: "Ad platform", type: "select", placeholder: "Select platform", options: ["Facebook/Instagram", "Google Ads", "TikTok", "LinkedIn", "Twitter/X"] },
-    { name: "audience", label: "Target audience", type: "text", placeholder: "e.g. Women 25-40 wanting to lose weight" },
-  ]} buildPrompt={(v) => `Write 3 ${v.platform} ad variations for: ${v.product}\n\nTarget audience: ${v.audience}`} />;
+  return <ClientPage />;
 }

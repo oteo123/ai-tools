@@ -1,8 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "Tweet / X Post Writer — Free AI Tool | AI Tools Pro",
+  description: "Viral tweets crafted by AI. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "Tweet / X Post Writer — Free AI Tool | AI Tools Pro",
+    description: "Viral tweets crafted by AI. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/tweet-writer",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tweet / X Post Writer — Free AI Tool | AI Tools Pro",
+    description: "Viral tweets crafted by AI. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="Tweet / X Post Writer" description="Viral tweets crafted by AI." systemPrompt="You are a Twitter/X growth expert. Write engaging tweets under 280 characters with strong hooks. Provide 5 variations. Output ONLY the tweets, numbered." fields={[
-    { name: "topic", label: "What do you want to tweet about?", type: "text", placeholder: "e.g. Why most startups fail in year 2" },
-    { name: "style", label: "Style", type: "select", placeholder: "Select style", options: ["Hot take", "Thread starter", "Educational", "Funny", "Motivational", "Controversial"] },
-  ]} buildPrompt={(v) => `Write 5 ${v.style?.toLowerCase()} tweets about: ${v.topic}`} />;
+  return <ClientPage />;
 }

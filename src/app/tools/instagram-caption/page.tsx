@@ -1,9 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "Instagram Caption Generator — Free AI Tool | AI Tools Pro",
+  description: "Engaging captions that drive likes and comments. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "Instagram Caption Generator — Free AI Tool | AI Tools Pro",
+    description: "Engaging captions that drive likes and comments. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/instagram-caption",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Instagram Caption Generator — Free AI Tool | AI Tools Pro",
+    description: "Engaging captions that drive likes and comments. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="Instagram Caption Generator" description="Engaging captions that drive likes and comments." systemPrompt="You are a social media expert. Write engaging, authentic Instagram captions with relevant emojis and a call to action. Include 3-5 hashtag suggestions. Output ONLY the caption." fields={[
-    { name: "topic", label: "What's the post about?", type: "text", placeholder: "e.g. Sunset photo from my vacation in Bali" },
-    { name: "vibe", label: "Vibe", type: "select", placeholder: "Select vibe", options: ["Inspirational", "Funny", "Aesthetic", "Informative", "Personal", "Promotional"] },
-    { name: "details", label: "Extra context", type: "textarea", placeholder: "e.g. Travel blog, 10K followers, fitness niche" },
-  ]} buildPrompt={(v) => `Write a ${v.vibe?.toLowerCase()} Instagram caption for: ${v.topic}\n\nContext: ${v.details}`} />;
+  return <ClientPage />;
 }

@@ -1,9 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "AI Resume Builder — Free AI Tool | AI Tools Pro",
+  description: "Stand-out resumes tailored to any job. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "AI Resume Builder — Free AI Tool | AI Tools Pro",
+    description: "Stand-out resumes tailored to any job. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/resume-builder",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Resume Builder — Free AI Tool | AI Tools Pro",
+    description: "Stand-out resumes tailored to any job. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="AI Resume Builder" description="Stand-out resumes tailored to any job." systemPrompt="You are an expert career coach and resume writer. Create professional, ATS-friendly resume content with strong action verbs and quantified achievements. Output in a clean, structured format." fields={[
-    { name: "role", label: "Target job title", type: "text", placeholder: "e.g. Senior Product Manager" },
-    { name: "experience", label: "Your experience summary", type: "textarea", placeholder: "e.g. 5 years in product management, led teams of 8, launched 3 products that generated $2M+" },
-    { name: "skills", label: "Key skills", type: "text", placeholder: "e.g. Agile, SQL, user research, roadmapping" },
-  ]} buildPrompt={(v) => `Build a resume for: ${v.role}\n\nExperience: ${v.experience}\n\nSkills: ${v.skills}`} />;
+  return <ClientPage />;
 }

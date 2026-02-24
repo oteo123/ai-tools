@@ -1,8 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "Text Summarizer — Free AI Tool | AI Tools Pro",
+  description: "Condense long text into key points. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "Text Summarizer — Free AI Tool | AI Tools Pro",
+    description: "Condense long text into key points. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/summarizer",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Text Summarizer — Free AI Tool | AI Tools Pro",
+    description: "Condense long text into key points. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="Text Summarizer" description="Condense long text into key points." systemPrompt="You are an expert at distilling information. Summarize the given text into clear, concise bullet points and a one-paragraph summary. Output ONLY the summary." fields={[
-    { name: "text", label: "Text to summarize", type: "textarea", placeholder: "Paste the text you want summarized..." },
-    { name: "length", label: "Summary length", type: "select", placeholder: "Select length", options: ["1-2 sentences", "Short paragraph", "Detailed bullet points"] },
-  ]} buildPrompt={(v) => `Summarize this text as ${v.length?.toLowerCase()}:\n\n${v.text}`} />;
+  return <ClientPage />;
 }

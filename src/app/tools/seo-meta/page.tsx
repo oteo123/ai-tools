@@ -1,8 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "SEO Meta Description Generator — Free AI Tool | AI Tools Pro",
+  description: "Click-worthy meta descriptions for better rankings. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "SEO Meta Description Generator — Free AI Tool | AI Tools Pro",
+    description: "Click-worthy meta descriptions for better rankings. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/seo-meta",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SEO Meta Description Generator — Free AI Tool | AI Tools Pro",
+    description: "Click-worthy meta descriptions for better rankings. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="SEO Meta Description Generator" description="Click-worthy meta descriptions for better rankings." systemPrompt="You are an SEO expert. Write compelling meta descriptions under 160 characters that include the target keyword and drive clicks. Provide 5 options. Output ONLY the meta descriptions, numbered." fields={[
-    { name: "page", label: "Page topic / title", type: "text", placeholder: "e.g. Best Running Shoes for Flat Feet 2025" },
-    { name: "keyword", label: "Target keyword", type: "text", placeholder: "e.g. running shoes flat feet" },
-  ]} buildPrompt={(v) => `Write 5 SEO meta descriptions for a page about: ${v.page}\n\nTarget keyword: ${v.keyword}`} />;
+  return <ClientPage />;
 }

@@ -1,9 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "Thank You Note Generator — Free AI Tool | AI Tools Pro",
+  description: "Thoughtful thank-you notes for any occasion. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "Thank You Note Generator — Free AI Tool | AI Tools Pro",
+    description: "Thoughtful thank-you notes for any occasion. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/thank-you-note",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Thank You Note Generator — Free AI Tool | AI Tools Pro",
+    description: "Thoughtful thank-you notes for any occasion. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="Thank You Note Generator" description="Thoughtful thank-you notes for any occasion." systemPrompt="You are a thoughtful writer. Write warm, genuine thank-you notes that feel personal and heartfelt. Output ONLY the note." fields={[
-    { name: "occasion", label: "What's it for?", type: "text", placeholder: "e.g. Wedding gift, job referral, birthday present" },
-    { name: "recipient", label: "Who's it for?", type: "text", placeholder: "e.g. My aunt Susan" },
-    { name: "details", label: "Specific details", type: "textarea", placeholder: "e.g. She gave us a KitchenAid mixer, she traveled from Ohio" },
-  ]} buildPrompt={(v) => `Write a thank-you note for: ${v.occasion}\n\nTo: ${v.recipient}\n\nDetails: ${v.details}`} />;
+  return <ClientPage />;
 }

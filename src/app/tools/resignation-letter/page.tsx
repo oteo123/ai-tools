@@ -1,11 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "Resignation Letter Generator — Free AI Tool | AI Tools Pro",
+  description: "Write a professional, graceful resignation letter. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "Resignation Letter Generator — Free AI Tool | AI Tools Pro",
+    description: "Write a professional, graceful resignation letter. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/resignation-letter",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Resignation Letter Generator — Free AI Tool | AI Tools Pro",
+    description: "Write a professional, graceful resignation letter. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="Resignation Letter Generator" description="Write a professional, graceful resignation letter." systemPrompt="You are a career coach specializing in professional transitions. Write a concise, respectful resignation letter that maintains positive relationships. Include the resignation statement, last working day, gratitude, and offer to help with transition. Keep it professional regardless of circumstances. Output ONLY the letter." fields={[
-    { name: "name", label: "Your name", type: "text", placeholder: "e.g. Alex Johnson" },
-    { name: "position", label: "Current position & company", type: "text", placeholder: "e.g. Marketing Director at Acme Corp" },
-    { name: "lastDay", label: "Last working day", type: "text", placeholder: "e.g. March 15, 2026" },
-    { name: "tone", label: "Tone", type: "select", placeholder: "Select tone", options: ["Warm & grateful", "Professional & neutral", "Brief & direct", "Heartfelt"] },
-    { name: "reason", label: "Reason (optional, for context)", type: "text", placeholder: "e.g. New opportunity, relocation, career change" },
-  ]} buildPrompt={(v) => `Write a ${v.tone?.toLowerCase()} resignation letter from ${v.name}, ${v.position}. Last day: ${v.lastDay}.${v.reason ? ` Reason: ${v.reason}` : ""}`} />;
+  return <ClientPage />;
 }

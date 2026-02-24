@@ -1,9 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "Product Description Writer — Free AI Tool | AI Tools Pro",
+  description: "Compelling product copy that sells. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "Product Description Writer — Free AI Tool | AI Tools Pro",
+    description: "Compelling product copy that sells. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/product-description",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Product Description Writer — Free AI Tool | AI Tools Pro",
+    description: "Compelling product copy that sells. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="Product Description Writer" description="Compelling product copy that sells." systemPrompt="You are an expert e-commerce copywriter. Write persuasive, benefit-driven product descriptions that highlight features and drive purchases. Output ONLY the description." fields={[
-    { name: "product", label: "Product name", type: "text", placeholder: "e.g. EcoBreeze Portable Fan" },
-    { name: "features", label: "Key features", type: "textarea", placeholder: "e.g. USB-C rechargeable, 3 speeds, ultra-quiet, 12-hour battery" },
-    { name: "platform", label: "Platform", type: "select", placeholder: "Where will this be listed?", options: ["Amazon", "Shopify", "Etsy", "eBay", "General website"] },
-  ]} buildPrompt={(v) => `Write a ${v.platform} product description for: ${v.product}\n\nFeatures: ${v.features}`} />;
+  return <ClientPage />;
 }

@@ -1,10 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "Complaint Letter Generator — Free AI Tool | AI Tools Pro",
+  description: "Write effective, professional complaint letters. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "Complaint Letter Generator — Free AI Tool | AI Tools Pro",
+    description: "Write effective, professional complaint letters. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/complaint-letter",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Complaint Letter Generator — Free AI Tool | AI Tools Pro",
+    description: "Write effective, professional complaint letters. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="Complaint Letter Generator" description="Write effective, professional complaint letters." systemPrompt="You are a consumer advocacy expert. Write a firm but professional complaint letter that clearly states the issue, includes relevant details (dates, order numbers, previous attempts to resolve), specifies the desired resolution, and sets a reasonable deadline. Maintain a respectful tone that gets results. Output ONLY the letter." fields={[
-    { name: "recipient", label: "Who are you writing to?", type: "text", placeholder: "e.g. Amazon Customer Service, Landlord, Airline" },
-    { name: "issue", label: "What's the complaint about?", type: "textarea", placeholder: "e.g. Defective product received, repeated billing errors, poor service" },
-    { name: "resolution", label: "What resolution do you want?", type: "text", placeholder: "e.g. Full refund, replacement, repair, compensation" },
-    { name: "tone", label: "Tone", type: "select", placeholder: "Select tone", options: ["Firm but polite", "Assertive", "Formal/legal", "Diplomatic", "Urgent"] },
-  ]} buildPrompt={(v) => `Write a ${v.tone?.toLowerCase()} complaint letter to ${v.recipient}.\n\nIssue: ${v.issue}\nDesired resolution: ${v.resolution}`} />;
+  return <ClientPage />;
 }

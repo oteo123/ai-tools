@@ -1,9 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "Motivational Quote Generator — Free AI Tool | AI Tools Pro",
+  description: "Generate powerful, original motivational quotes. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "Motivational Quote Generator — Free AI Tool | AI Tools Pro",
+    description: "Generate powerful, original motivational quotes. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/motivational-quote",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Motivational Quote Generator — Free AI Tool | AI Tools Pro",
+    description: "Generate powerful, original motivational quotes. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="Motivational Quote Generator" description="Generate powerful, original motivational quotes." systemPrompt="You are a motivational thought leader. Generate original, impactful motivational quotes that resonate deeply. Each quote should be concise, memorable, and shareable. Provide 5 quotes. Output ONLY the quotes, numbered." fields={[
-    { name: "theme", label: "Theme", type: "select", placeholder: "Select theme", options: ["Success", "Perseverance", "Self-Love", "Leadership", "Courage", "Growth", "Gratitude", "Creativity"] },
-    { name: "style", label: "Style", type: "select", placeholder: "Select style", options: ["Poetic & Deep", "Direct & Punchy", "Warm & Encouraging", "Bold & Provocative"] },
-    { name: "context", label: "Specific context (optional)", type: "text", placeholder: "e.g. For entrepreneurs, for students, for athletes" },
-  ]} buildPrompt={(v) => `Generate 5 original ${v.style?.toLowerCase()} motivational quotes about ${v.theme?.toLowerCase()}${v.context ? ` for ${v.context}` : ""}.`} />;
+  return <ClientPage />;
 }

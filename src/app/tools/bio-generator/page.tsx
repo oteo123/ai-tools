@@ -1,9 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "Professional Bio Generator — Free AI Tool | AI Tools Pro",
+  description: "Polished bios for any platform. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "Professional Bio Generator — Free AI Tool | AI Tools Pro",
+    description: "Polished bios for any platform. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/bio-generator",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Professional Bio Generator — Free AI Tool | AI Tools Pro",
+    description: "Polished bios for any platform. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="Professional Bio Generator" description="Polished bios for any platform." systemPrompt="You are a personal branding expert. Write professional bios in first and third person. Provide 3 lengths: one-liner, short paragraph, and full bio. Output ONLY the bios, labeled." fields={[
-    { name: "name", label: "Your name", type: "text", placeholder: "e.g. Sarah Chen" },
-    { name: "role", label: "Role / title", type: "text", placeholder: "e.g. Product Designer at Google" },
-    { name: "details", label: "Key accomplishments & personality", type: "textarea", placeholder: "e.g. 8 years in UX, former startup founder, speaker at Config, loves rock climbing" },
-  ]} buildPrompt={(v) => `Write professional bios for ${v.name}, ${v.role}\n\nDetails: ${v.details}`} />;
+  return <ClientPage />;
 }

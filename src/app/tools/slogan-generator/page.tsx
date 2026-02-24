@@ -1,8 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "Slogan Generator — Free AI Tool | AI Tools Pro",
+  description: "Catchy slogans that stick. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "Slogan Generator — Free AI Tool | AI Tools Pro",
+    description: "Catchy slogans that stick. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/slogan-generator",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Slogan Generator — Free AI Tool | AI Tools Pro",
+    description: "Catchy slogans that stick. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="Slogan Generator" description="Catchy slogans that stick." systemPrompt="You are a creative advertising copywriter. Generate catchy, memorable slogans and taglines. Provide 15 options ranging from punchy to descriptive. Output ONLY the slogans, numbered." fields={[
-    { name: "brand", label: "Brand or product", type: "text", placeholder: "e.g. EcoClean — eco-friendly cleaning products" },
-    { name: "tone", label: "Tone", type: "select", placeholder: "Select tone", options: ["Bold & Confident", "Witty & Clever", "Warm & Friendly", "Professional", "Edgy"] },
-  ]} buildPrompt={(v) => `Generate 15 ${v.tone?.toLowerCase()} slogans for: ${v.brand}`} />;
+  return <ClientPage />;
 }

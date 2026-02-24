@@ -1,8 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "Hashtag Generator — Free AI Tool | AI Tools Pro",
+  description: "Trending hashtags for maximum reach. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "Hashtag Generator — Free AI Tool | AI Tools Pro",
+    description: "Trending hashtags for maximum reach. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/hashtag-generator",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hashtag Generator — Free AI Tool | AI Tools Pro",
+    description: "Trending hashtags for maximum reach. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="Hashtag Generator" description="Trending hashtags for maximum reach." systemPrompt="You are a social media growth expert. Generate a mix of popular, mid-range, and niche hashtags optimized for reach and engagement. Provide 30 hashtags organized by popularity tier. Output ONLY the hashtags." fields={[
-    { name: "topic", label: "Post topic or niche", type: "text", placeholder: "e.g. Vegan meal prep" },
-    { name: "platform", label: "Platform", type: "select", placeholder: "Select platform", options: ["Instagram", "TikTok", "Twitter/X", "LinkedIn"] },
-  ]} buildPrompt={(v) => `Generate 30 ${v.platform} hashtags for: ${v.topic}`} />;
+  return <ClientPage />;
 }

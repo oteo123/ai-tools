@@ -183,6 +183,36 @@ export default function ToolPage({ name, description, systemPrompt, fields, buil
             </button>
           </div>
           <div className="whitespace-pre-wrap text-sm leading-relaxed">{result}</div>
+          <div className="flex items-center gap-4 mt-4 pt-3 border-t border-border">
+            <span className="text-xs text-muted">Share:</span>
+            <button
+              onClick={() => {
+                const text = encodeURIComponent(`Just used ${name} on AI Tools Pro! \u{1F525}`);
+                const url = encodeURIComponent("https://ai-tools-woad-six.vercel.app" + window.location.pathname);
+                window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, "_blank");
+              }}
+              className="text-xs text-muted hover:text-accent transition-colors"
+            >
+              Twitter/X
+            </button>
+            <button
+              onClick={() => {
+                const url = encodeURIComponent("https://ai-tools-woad-six.vercel.app" + window.location.pathname);
+                window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, "_blank");
+              }}
+              className="text-xs text-muted hover:text-accent transition-colors"
+            >
+              LinkedIn
+            </button>
+            <button
+              onClick={() => {
+                navigator.clipboard.writeText("https://ai-tools-woad-six.vercel.app" + window.location.pathname);
+              }}
+              className="text-xs text-muted hover:text-accent transition-colors"
+            >
+              Copy Link
+            </button>
+          </div>
         </div>
       )}
     </div>

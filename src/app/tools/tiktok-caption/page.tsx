@@ -1,10 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "TikTok Caption Generator — Free AI Tool | AI Tools Pro",
+  description: "Write scroll-stopping TikTok captions with viral potential. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "TikTok Caption Generator — Free AI Tool | AI Tools Pro",
+    description: "Write scroll-stopping TikTok captions with viral potential. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/tiktok-caption",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "TikTok Caption Generator — Free AI Tool | AI Tools Pro",
+    description: "Write scroll-stopping TikTok captions with viral potential. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="TikTok Caption Generator" description="Write scroll-stopping TikTok captions with viral potential." systemPrompt="You are a TikTok content strategist. Write short, engaging captions that hook viewers, encourage engagement, and use trending formats. Include relevant hashtags. Provide 5 caption options. Output ONLY the captions, numbered." fields={[
-    { name: "topic", label: "Video topic", type: "text", placeholder: "e.g. Morning routine, cooking hack, day in my life" },
-    { name: "niche", label: "Content niche", type: "select", placeholder: "Select niche", options: ["Lifestyle", "Comedy", "Educational", "Beauty/Fashion", "Fitness", "Food", "Business/Finance", "Travel", "Tech"] },
-    { name: "vibe", label: "Caption vibe", type: "select", placeholder: "Select vibe", options: ["Funny & Relatable", "Informative & Value-Packed", "Storytelling", "Controversial / Hot Take", "Inspirational"] },
-    { name: "cta", label: "Desired call to action", type: "text", placeholder: "e.g. Follow for more, save this, comment your favorite" },
-  ]} buildPrompt={(v) => `Write 5 ${v.vibe?.toLowerCase()} TikTok captions for a ${v.niche?.toLowerCase()} video about: ${v.topic}\n\nCTA: ${v.cta}`} />;
+  return <ClientPage />;
 }

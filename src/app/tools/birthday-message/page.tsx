@@ -1,10 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "Birthday Message Generator — Free AI Tool | AI Tools Pro",
+  description: "Create the perfect birthday message for anyone. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "Birthday Message Generator — Free AI Tool | AI Tools Pro",
+    description: "Create the perfect birthday message for anyone. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/birthday-message",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Birthday Message Generator — Free AI Tool | AI Tools Pro",
+    description: "Create the perfect birthday message for anyone. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="Birthday Message Generator" description="Create the perfect birthday message for anyone." systemPrompt="You are a creative writer who crafts memorable, personalized birthday messages. Match the tone to the relationship and make each message feel special and unique. Output ONLY the birthday message." fields={[
-    { name: "recipient", label: "Who is it for?", type: "text", placeholder: "e.g. Mom, best friend Jake, boss" },
-    { name: "tone", label: "Tone", type: "select", placeholder: "Select tone", options: ["Heartfelt", "Funny", "Sentimental", "Casual", "Formal"] },
-    { name: "format", label: "Format", type: "select", placeholder: "Select format", options: ["Short Card Message", "Long Letter", "Social Media Post", "Text Message"] },
-    { name: "details", label: "Personal details to include", type: "textarea", placeholder: "e.g. Turning 30, loves cooking, just got promoted" },
-  ]} buildPrompt={(v) => `Write a ${v.tone?.toLowerCase()} birthday message for ${v.recipient} in ${v.format?.toLowerCase()} format.\n\nDetails: ${v.details}`} />;
+  return <ClientPage />;
 }

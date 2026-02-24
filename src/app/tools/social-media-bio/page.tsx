@@ -1,10 +1,23 @@
-"use client";
-import ToolPage from "@/components/ToolPage";
+import type { Metadata } from "next";
+import ClientPage from "./client";
+
+export const metadata: Metadata = {
+  title: "Social Media Bio Generator — Free AI Tool | AI Tools Pro",
+  description: "Craft a standout social media bio that captures who you are. Free, no signup required. Powered by AI.",
+  openGraph: {
+    title: "Social Media Bio Generator — Free AI Tool | AI Tools Pro",
+    description: "Craft a standout social media bio that captures who you are. Free, no signup required. Powered by AI.",
+    url: "https://ai-tools-woad-six.vercel.app/tools/social-media-bio",
+    siteName: "AI Tools Pro",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Social Media Bio Generator — Free AI Tool | AI Tools Pro",
+    description: "Craft a standout social media bio that captures who you are. Free, no signup required. Powered by AI.",
+  },
+};
+
 export default function Page() {
-  return <ToolPage name="Social Media Bio Generator" description="Craft a standout social media bio that captures who you are." systemPrompt="You are a personal branding expert. Write concise, memorable social media bios that convey personality and purpose within character limits. Include relevant keywords and a clear value proposition. Provide 5 options. Output ONLY the bios, numbered." fields={[
-    { name: "platform", label: "Platform", type: "select", placeholder: "Select platform", options: ["Instagram", "Twitter/X", "LinkedIn", "TikTok", "YouTube", "Pinterest"] },
-    { name: "role", label: "Who are you?", type: "text", placeholder: "e.g. Fitness coach, freelance designer, travel blogger" },
-    { name: "vibe", label: "Vibe", type: "select", placeholder: "Select vibe", options: ["Professional & Authoritative", "Creative & Quirky", "Minimalist & Clean", "Fun & Energetic", "Inspirational"] },
-    { name: "details", label: "Key details to include", type: "textarea", placeholder: "e.g. Based in Miami, 10+ years experience, DM for collabs, link to podcast" },
-  ]} buildPrompt={(v) => `Write 5 ${v.vibe?.toLowerCase()} ${v.platform} bio options for a ${v.role}.\n\nInclude: ${v.details}`} />;
+  return <ClientPage />;
 }
