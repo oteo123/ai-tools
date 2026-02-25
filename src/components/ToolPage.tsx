@@ -102,6 +102,7 @@ export default function ToolPage({ name, description, systemPrompt, fields, buil
           </button>
           <span className="text-sm text-muted">{uses >= 5 ? "0" : emailRequired ? "Enter email to unlock 2 more" : `${5 - uses}`} free uses remaining</span>
         </div>
+        <p className="text-xs text-muted mt-2">Your inputs are never stored. Results are generated in real-time.</p>
       </form>
 
       {uses >= 3 && !emailSubmitted && uses < 5 && (
